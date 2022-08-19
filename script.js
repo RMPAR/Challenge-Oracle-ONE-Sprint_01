@@ -1,7 +1,7 @@
 const inputText = document.querySelector('.input-text');
 const message = document.querySelector('.message');
 
-function encript(stringEcripted) {
+function encript(stringEncrypted) {
 	let matrixCode = [
 		['e', 'enter'],
 		['i', 'imes'],
@@ -10,16 +10,16 @@ function encript(stringEcripted) {
 		['u', 'ufat'],
 	];
 
-	stringEcripted = stringEcripted.toLowerCase();
+	stringEncrypted = stringEncrypted.toLowerCase();
 
 	for (let i = 0; i < matrixCode.length; i++) {
-		if (stringEncripted.includes(matrixCode[i][0])) {
-			stringEcripted = stringEcripted.replaceAll(
+		if (stringEncrypted.includes(matrixCode[i][0])) {
+			stringDecrypted = stringDecrypted.replaceAll(
 				matrixCode[i][0],
 				matrixCode[i][1]
 			);
 		}
 	}
 
-	return stringEcripted;
+	return stringEncrypted;
 }
