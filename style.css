@@ -5,26 +5,10 @@ main {
 }
 
 body {
+	background-color: #f3f5fc;
 	/*
     background-image: url('assets/enigma-441280.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
     */
-}
-
-.message {
-	position: relative;
-	margin-top: 20px;
-	margin-left: 90px;
-}
-
-.encrypt {
-	box-sizing: border-box;
-	position: absolute;
-	width: 260px;
-	height: 195px;
-	left: 369px;
-	top: 255px;
-	border: 1px dashed #7b61ff;
-	border-radius: 5px;
 }
