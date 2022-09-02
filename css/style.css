@@ -1,0 +1,79 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+}
+
+.body {
+	background-color: gray;
+}
+
+.header {
+	background-color: aqua;
+	padding: 15px;
+}
+
+.nav {
+	background-color: red;
+}
+
+.main {
+	background-color: blue;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sectionIzq {
+	background-color: pink;
+}
+
+.sectionDer {
+	background-color: yellowgreen;
+}
+
+.input-texto {
+	margin-top: 90px;
+}
+
+.mensaje {
+	position: relative;
+	margin-top: 20px;
+	margin-left: 90px;
+	background-image: url('assets/Muñeco.svg');
+	background-repeat: no-repeat;
+	background-position: 18px;
+	background-size: 300px;
+}
+
+.copiar {
+	position: relative;
+	margin-top: 20px;
+	margin-left: 205px;
+}
+
+.botones {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+.encriptar {
+	background-color: darkblue;
+	color: white;
+}
+
+.desencriptar {
+	margin-left: 30px;
+}
+
+.informacion {
+	font-size: 15px;
+}
+
+.footer {
+	background-color: chocolate;
+}

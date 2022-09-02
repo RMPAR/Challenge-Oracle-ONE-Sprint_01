@@ -1,17 +1,19 @@
 const inputText = document.querySelector('.input-text');
 const message = document.querySelector('.message');
+const buttonCopy = document.querySelector('.copy');
+buttonCopy.style.display = 'none';
 
 function buttonEncrypt() {
-	const textDecrypted = encrypt(inputText.value);
-	message.value = textDecrypted;
+	const textEncrypted = encrypt(inputText.value);
+	message.value = textEncrypted;
 	message.style.backgroundImage = 'none';
 	inputText.value = '';
+	buttonCopy.style.display = 'block';
 }
 
 function buttonDecrypt() {
 	const textEncrypted = decrypt(inputText.value);
 	message.value = textEncrypted;
-	//message.style.backgroundImage = 'none';
 	inputText.value = '';
 }
 
@@ -28,13 +30,12 @@ function encrypt(stringEncrypted) {
 
 	for (let i = 0; i < matrixCode.length; i++) {
 		if (stringEncrypted.includes(matrixCode[i][0])) {
-			stringEnrypted = stringEncrypted.replaceAll(
+			stringEncrypted = stringEncrypted.replaceAll(
 				matrixCode[i][0],
 				matrixCode[i][1]
 			);
 		}
 	}
-
 	return stringEncrypted;
 }
 
