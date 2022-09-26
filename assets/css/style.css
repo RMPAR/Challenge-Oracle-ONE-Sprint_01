@@ -1,0 +1,137 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+}
+
+.body {
+	background-color: #609ed4;
+}
+
+.header {
+	background-color: aqua;
+	padding: 15px;
+	margin: 0.1%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header .logo {
+	margin-right: 2%;
+}
+
+.header .nav {
+	background-color: red;
+	margin-right: 2%;
+}
+
+.header .nav a {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0 20px;
+	color: black;
+}
+
+.header .nav a:hover {
+	color: lightskyblue;
+	text-decoration: underline;
+}
+
+.main {
+	background-color: blue;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sectionIzq {
+	background-color: pink;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.sectionDer {
+	background-color: yellowgreen;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.input-texto {
+	margin-top: 90px;
+}
+
+.message {
+	position: relative;
+	margin-top: 20px;
+	margin-left: 90px;
+	background-image: url('assets/Muñeco.svg');
+	background-repeat: no-repeat;
+	background-position: 18px;
+	background-size: 300px;
+}
+
+.copy {
+	position: relative;
+	margin-top: 20px;
+	margin-left: 205px;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+.encrypt,
+.decrypt,
+.copy {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+	gap: 8px;
+
+	position: relative;
+	width: 200px;
+	height: 75px;
+	left: 24px;
+	top: 24px;
+
+	background: #0a3871;
+	border-radius: 24px;
+
+	transition-duration: 0.4s;
+}
+
+.encrypt:hover,
+.decrypt:hover,
+.copy:hover {
+	background-color: #4caf50;
+	color: white;
+}
+
+.button-text {
+	width: 51px;
+	height: 19px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: #ffffff;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.footer {
+	background-color: chocolate;
+}
