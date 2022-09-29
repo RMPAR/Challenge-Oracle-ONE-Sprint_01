@@ -1,14 +1,34 @@
 const inputText = document.querySelector('.input-text');
 const message = document.querySelector('.message');
 const buttonCopy = document.querySelector('.copy');
-buttonCopy.style.display = 'none';
 
 function buttonEncrypt() {
-	const textEncrypted = encrypt(inputText.value);
-	message.value = textEncrypted;
+	const textToEncrypt = encrypt(inputText.value);
+	message.value = textToEncrypt;
 	message.style.backgroundImage = 'none';
 	inputText.value = '';
-	buttonCopy.style.display = 'block';
+}
+
+function encrypt(stringToEncrypt) {
+	let matrixCode = [
+		['e', 'enter'],
+		['i', 'imes'],
+		['a', 'ai'],
+		['o', 'ober'],
+		['u', 'ufat'],
+	];
+
+	stringToEncrypt = stringToEncrypt.toLowerCase();
+
+	for (let i = 0; i < matrixCode.length; i++) {
+		if (stringToEncrypt.includes(matrixCode[i][0])) {
+			stringToEncrypt = stringToEncrypt.replaceAll(
+				matrixCode[i][0],
+				matrixCode[i][1]
+			);
+		}
+	}
+	return stringToEncrypt;
 }
 
 function buttonDecrypt() {
@@ -17,11 +37,11 @@ function buttonDecrypt() {
 	inputText.value = '';
 }
 
-function encrypt(stringEncrypted) {
+function decrypt(stringEncrypted) {
 	let matrixCode = [
-		['a', 'ai'],
 		['e', 'enter'],
 		['i', 'imes'],
+		['a', 'ai'],
 		['o', 'ober'],
 		['u', 'ufat'],
 	];
@@ -29,35 +49,13 @@ function encrypt(stringEncrypted) {
 	stringEncrypted = stringEncrypted.toLowerCase();
 
 	for (let i = 0; i < matrixCode.length; i++) {
-		if (stringEncrypted.includes(matrixCode[i][0])) {
+		if (stringEncrypted.includes(matrixCode[i][1])) {
 			stringEncrypted = stringEncrypted.replaceAll(
-				matrixCode[i][0],
-				matrixCode[i][1]
-			);
-		}
-	}
-	return stringEncrypted;
-}
-
-function decrypt(stringDecrypted) {
-	let matrixCode = [
-		['a', 'ai'],
-		['e', 'enter'],
-		['i', 'imes'],
-		['o', 'ober'],
-		['u', 'ufat'],
-	];
-
-	stringDecrypted = stringDecrypted.toLowerCase();
-
-	for (let i = 0; i < matrixCode.length; i++) {
-		if (stringDecrypted.includes(matrixCode[i][1])) {
-			stringDecrypted = stringDecrypted.replaceAll(
 				matrixCode[i][1],
 				matrixCode[i][0]
 			);
 		}
 	}
 
-	return stringDecrypted;
+	return stringEncrypted;
 }

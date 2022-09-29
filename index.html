@@ -15,17 +15,17 @@
 
         <div class="logo">
 
-            <img src="/assets/img/Logo.svg" alt="Logo de Alura con la letra a">
+            <a href=""><img src="/assets/img/Logo.svg" alt="Logo de Alura con la letra a"></a>
 
         </div>
 
         <nav class="nav">
 
-            <a href="index.html">Home</a>
+            <a href="index.html">Inicio</a>
 
-            <a href="about.html">About</a>
+            <a href="about.html">Acerca de</a>
 
-            <a href="contact.html">Contact</a>
+            <a href="contact.html">Contacto</a>
 
         </nav>
 
@@ -35,16 +35,26 @@
 
         <section class="sectionIzq">
 
-            <p>sectionIzq</p>
+            <div class="textArea">
 
-            <textarea class="input-text" cols="40" rows="6" placeholder="Ingreso el texto aquí"></textarea>
+                <textarea class="input-text" cols="30" rows="5" placeholder="Ingrese el texto aquí"></textarea>
+
+            </div>
+
+            <div class="warning">
+
+                <img src="/assets/img/PngItem_314246.png" class="exclamation">
+                <p>Solamente letras minúsculas sin acento</p>
+
+            </div>
 
             <div class="buttons">
 
-                <button class="encrypt" onclick="buttonEncrypt">
+                <button class="encrypt" onclick="buttonEncrypt()">
                     <p class="button-text">Encriptar</p>
                 </button>
-                <button class="decrypt" onclick="buttonDecrypt">
+
+                <button class="decrypt" onclick="buttonDecrypt()">
                     <p class="button-text">Desencriptar</p>
                 </button>
 
@@ -54,15 +64,28 @@
 
         <section class="sectionDer">
 
-            <p>sectionDer</p>
+            <div>
+                <textarea class="message" cols="20" rows="5"></textarea>
 
-            <textarea class="message" cols="20" rows="6"></textarea>
+                <div class="instructivo">
 
-            <div class="buttons">
+                    <h3>No se encontró ningún mensaje</h3>
 
-                <button class="copy">
-                    <p class="button-text">Copiar</p>
-                </button>
+                </div>
+
+                <div class="instructivo">
+
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+
+                </div>
+
+                <div class="buttons">
+
+                    <button class="copy" onclick="buttonCopy()">
+                        <p class="button-text">Copiar</p>
+                    </button>
+
+                </div>
 
             </div>
 
@@ -72,14 +95,13 @@
 
     <footer class="footer">
 
-        <p>@RicardoMPereyra</p>
+        <p class="copyright">&copy; Copyright Ricardo Miguel Pereyra - 2022</p>
 
     </footer>
 
     <script src="/assets/js/script.js"></script>
 
-    <p>Body</p>
-
 </body>
 
 </html>
+<!-- https://www.youtube.com/watch?v=Fu2xdQ7N2mg -->

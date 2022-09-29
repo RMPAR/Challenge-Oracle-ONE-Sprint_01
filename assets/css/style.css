@@ -1,6 +1,6 @@
 * {
-	padding: 0;
-	margin: 0;
+	padding: 0px;
+	margin: 0px;
 	box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
@@ -9,84 +9,135 @@
 }
 
 .body {
-	background-color: #609ed4;
+	background-color: #ffffff;
 }
 
 .header {
-	background-color: aqua;
-	padding: 15px;
-	margin: 0.1%;
+	width: 98%;
+	background-color: #ffffff;
+	padding: 1em;
+	margin: 1em;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.header .logo {
-	margin-right: 2%;
+.header .logo a {
+	margin-right: 0;
+	justify-content: center;
+}
+
+.header .logo:hover {
+	transition-duration: 500ms;
+	transform: scale(1.25);
 }
 
 .header .nav {
-	background-color: red;
-	margin-right: 2%;
+	padding: 1em 0 1em 0;
+	justify-content: center;
 }
 
 .header .nav a {
 	text-decoration: none;
 	font-size: 20px;
 	font-weight: bold;
-	padding: 0 20px;
+	padding: 0 1em;
 	color: black;
 }
 
 .header .nav a:hover {
-	color: lightskyblue;
+	color: #0000ff;
 	text-decoration: underline;
 }
 
 .main {
-	background-color: blue;
+	background-color: #ffffff;
+	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 }
 
 .sectionIzq {
-	background-color: pink;
+	background: linear-gradient(#f3f5fc, #ffffff);
+	padding: 1em;
+	margin-left: 0.5em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-content: space-around;
+	width: 60%;
+	border-radius: 20px;
 }
 
 .sectionDer {
-	background-color: yellowgreen;
+	background: linear-gradient(#f3f5fc, #ffffff);
+	padding: 1em;
+	margin-right: 0.5em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-content: flex-start;
+	width: 39%;
+	border-radius: 20px;
 }
 
-.input-texto {
-	margin-top: 90px;
+.input-text {
+	margin-top: 1em;
+	width: 100%;
 }
 
 .message {
-	position: relative;
-	margin-top: 20px;
-	margin-left: 90px;
-	background-image: url('assets/Muñeco.svg');
+	margin-top: 1em;
+	width: 100%;
+	background-image: url('/assets/img/Muñeco.svg');
 	background-repeat: no-repeat;
-	background-position: 18px;
-	background-size: 300px;
 }
 
-.copy {
-	position: relative;
-	margin-top: 20px;
-	margin-left: 205px;
+.warning {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.warning p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 150%;
+	color: #495057;
+	opacity: 0.8;
+}
+
+.exclamation {
+	width: 16px;
+}
+
+.instructivo {
+}
+
+.instructivo h3 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+	text-align: center;
+	color: #343a40;
+}
+
+.instructivo p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	color: #495057;
 }
 
 .buttons {
 	display: flex;
 	flex-direction: row;
-	margin-top: 20px;
+	justify-content: space-between;
+	margin-top: 1em;
 }
 
 .encrypt,
@@ -94,11 +145,10 @@
 .copy {
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	align-items: center;
 	padding: 24px;
 	gap: 8px;
 
-	position: relative;
 	width: 200px;
 	height: 75px;
 	left: 24px;
@@ -113,25 +163,36 @@
 .encrypt:hover,
 .decrypt:hover,
 .copy:hover {
+    cursor: pointer;
 	background-color: #4caf50;
 	color: white;
 }
 
 .button-text {
-	width: 51px;
-	height: 19px;
+	width: 50px;
+	height: 20px;
 	font-family: 'Inter';
 	font-style: normal;
-	font-weight: 400;
+	font-weight: bold;
 	font-size: 16px;
 	line-height: 19px;
 	text-align: center;
 	color: #ffffff;
-	flex: none;
+	flex: auto;
 	order: 0;
-	flex-grow: 0;
+	flex-grow: 1;
 }
 
 .footer {
-	background-color: chocolate;
+	background: linear-gradient(#ffffff, #f3f5fc);
+	padding: 1em;
+	text-align: center;
+	margin: 20px 0 20px 0;
+}
+
+.copyright {
+	color: #000000;
+	font-size: 20px;
+	margin: 20px;
+	padding: 25px;
 }
