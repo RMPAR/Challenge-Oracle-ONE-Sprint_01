@@ -1,6 +1,5 @@
 const inputText = document.querySelector('.input-text');
 const message = document.querySelector('.message');
-const buttonCopy = document.querySelector('.copy');
 
 function buttonEncrypt() {
 	const textToEncrypt = encrypt(inputText.value);
@@ -58,4 +57,11 @@ function decrypt(stringEncrypted) {
 	}
 
 	return stringEncrypted;
+}
+
+function buttonCopy() {
+	var content = document.querySelector('#tex-Encripted');
+	content.select();
+	document.execCommand('copy');
+	alert('Se ha copiado el texto');
 }

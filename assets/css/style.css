@@ -163,7 +163,7 @@
 .encrypt:hover,
 .decrypt:hover,
 .copy:hover {
-    cursor: pointer;
+	cursor: pointer;
 	background-color: #4caf50;
 	color: white;
 }
@@ -181,6 +181,86 @@
 	flex: auto;
 	order: 0;
 	flex-grow: 1;
+}
+
+.mainAcercaDe {
+	background: linear-gradient(#f3f5fc, #ffffff);
+	padding: 1em;
+	margin: 0.5em;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-weight: bolder;
+	padding: 0.25em;
+	font-size: 2.5em;
+}
+
+h2 {
+	font-weight: bold;
+	padding: 0.25em;
+	font-size: 2em;
+}
+
+h3 {
+	font-weight: normal;
+	padding: 0.25em;
+	font-size: 1.5em;
+}
+
+.tituloRequisitos {
+	padding: 0.25em;
+	font-size: 1em;
+}
+
+.listaRequisitos {
+	list-style-type: disc;
+}
+
+.itemsRequisitos {
+	font-size: 0.75em;
+}
+
+.contactForm {
+	width: 100%;
+	border-radius: 20px;
+	background: linear-gradient(#f3f5fc, #ffffff);
+	padding: 1em;
+	margin: 0.5em;
+}
+
+input[type='text'],
+select,
+textarea {
+	width: 100%;
+	padding: 1em;
+	border: 1px solid #cccccc;
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	resize: vertical;
+}
+
+input[type='submit'] {
+	background: #0a3871;
+	border-radius: 24px;
+	color: #ffffff;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 10x;
+	cursor: pointer;
+}
+
+input[type='submit']:hover {
+	cursor: pointer;
+	background-color: #4caf50;
+	color: white;
 }
 
 .footer {
